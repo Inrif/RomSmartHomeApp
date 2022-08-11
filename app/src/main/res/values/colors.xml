@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+<!--    <color name="black">#FF000000</color>-->
+<!--    <color name="white">#FFFFFFFF</color>-->
+
+
+    <color name="corportateGrey">#353f48</color>
+    <color name="raspberryRed">#e70f47</color>
+    <color name="disabledRaspberryRed">#4De70f47</color>
+    <color name="skyBlue">#199FE3</color>
+
+    <color name="mediumGrey">#FFF</color>
+    <color name="purple">#a03481</color>
+    <color name="supplayPurple">#a90083</color>
+    <color name="red">#d3324b</color>
+    <color name="TabLayoutBackgroundGrey">#606770</color>
+    <color name="supplayGreen">#008a47</color>
+    <color name="supplayOrange">#D95F2B</color>
+    <color name="transparent">#00FFFFFF</color>
+
+
+
+    <color name="validDocumentColor">#26A653</color>
+    <color name="pendingDocumentColor">#353FBF</color>
+    <color name="refusedDocumentColor">#E70F47</color>
+    <color name="black">#000000</color>
+
+
+
+
+    <!-- V 2.0 -->
+    <color name="backgroundDarkBlue">#060B3D</color>
+
+    <!-- V 3.0 -->
+
+    <color name="corporateGrey">#36424A</color>
+    <color name="corporateRed">#E70F47</color>
+
+    <color name="bleu">#353FBF</color>
+    <color name="bleu_dynamique">#0017FF</color>
+    <color name="bleu_gris">#072246</color>
+    <color name="bleu_gris_100">#060B3D</color>
+    <color name="bleu_gris_40">#9B9DB1</color>
+    <color name="bleu_gris_5">#F3F3F5</color>
+    <color name="bleu_fonce">#2D348F</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="titre_section_gris">#83849A</color>
+
+</resources>

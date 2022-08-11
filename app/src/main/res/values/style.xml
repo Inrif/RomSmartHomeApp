@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- Base application theme. -->
+<style name="RaspberryTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/raspberryRed</item>
+    <item name="windowActionBar">true</item>
+    <item name="windowNoTitle">false</item>
+</style>
+
+<style name="Raspberry2Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/bleu_gris_40</item>
+    <item name="windowActionBar">true</item>
+    <item name="windowNoTitle">false</item>
+</style>
+
+
+<style name="CETTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/backgroundDarkBlue</item>
+    <item name="windowActionBar">true</item>
+    <item name="windowNoTitle">false</item>
+</style>
+
+<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/corportateGrey</item>
+    <item name="windowActionBar">true</item>
+    <item name="windowNoTitle">false</item>
+</style>
+
+<style name="NoTitleBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+</style>
+
+<style name="Switch" parent="">
+    <item name="colorOnSurface">@color/raspberryRed</item>
+    <item name="colorSecondary">@color/backgroundDarkBlue</item>
+</style>
+
+<!-- Style typographique -->
+
+<style name="lato_regular_400_20">
+    <item name="font">@font/lato_regular</item>
+    <item name="android:textSize">20dp</item>
+    <item name="fontWeight">400</item>
+    <item name="lineHeight">28dp</item>
+</style>
+
+<style name="lato_bold_700_20">
+    <item name="font">@font/lato_bold</item>
+    <item name="android:textSize">20dp</item>
+    <item name="fontWeight">700</item>
+    <item name="lineHeight">28dp</item>
+</style>
+
+<style name="lato_regular_400_16">
+    <item name="font">@font/lato_regular</item>
+    <item name="android:textSize">16dp</item>
+    <item name="fontWeight">400</item>
+    <item name="lineHeight">24dp</item>
+</style>
+
+<style name="lato_bold_700_16">
+    <item name="font">@font/lato_bold</item>
+    <item name="android:textSize">16dp</item>
+    <item name="fontWeight">700</item>
+    <item name="lineHeight">24dp</item>
+</style>
+
+
+
+<style name="lato_regular_400_14">
+    <item name="font">@font/lato_regular</item>
+    <item name="android:textSize">14dp</item>
+    <item name="fontWeight">400</item>
+    <item name="lineHeight">22dp</item>
+</style>
+
+<style name="lato_bold_700_14">
+    <item name="font">@font/lato_bold</item>
+    <item name="android:textSize">14dp</item>
+    <item name="fontWeight">700</item>
+    <item name="lineHeight">22dp</item>
+</style>
+
+
+<style name="lato_regular_400_12">
+    <item name="font">@font/lato_regular</item>
+    <item name="android:textSize">12dp</item>
+    <item name="fontWeight">400</item>
+    <item name="lineHeight">18dp</item>
+</style>
+
+<style name="lato_bold_700_12">
+    <item name="font">@font/lato_bold</item>
+    <item name="android:textSize">12dp</item>
+    <item name="fontWeight">700</item>
+    <item name="lineHeight">18dp</item>
+</style>
+
+<!-- Style typographique FIN -->
+
+<!-- Style typographique OUIDOU -->
+
+<style name="xbig_black">
+    <item name="font">@font/lato_black</item>
+    <item name="android:textSize">24dp</item>
+    <item name="fontWeight">900</item>
+    <item name="lineHeight">33dp</item>
+    <item name="fontStyle">normal</item>
+</style>
+
+
+<style name="big_reg">
+    <item name="font">@font/lato_regular</item>
+    <item name="android:textSize">20dp</item>
+    <item name="fontWeight">400</item>
+    <item name="lineHeight">24dp</item>
+    <item name="fontStyle">normal</item>
+</style>
+
+<style name="big_black">
+    <item name="font">@font/lato_black</item>
+    <item name="android:textSize">20dp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="fontWeight">900</item>
+    <item name="lineHeight">24dp</item>
+    <item name="fontStyle">normal</item>
+</style>
+
+<style name="default_bold">
+    <item name="font">@font/lato_bold</item>
+    <item name="android:textSize">16dp</item>
+    <item name="fontWeight">700</item>
+    <item name="lineHeight">24dp</item>
+    <item name="fontStyle">normal</item>
+    <item name="android:textStyle">bold</item>
+</style>
+
+
+<style name="default_reg">
+    <item name="font">@font/lato_regular</item>
+    <item name="android:textSize">16dp</item>
+    <item name="fontWeight">400</item>
+    <item name="lineHeight">24dp</item>
+    <item name="fontStyle">normal</item>
+</style>
+
+
+
+<style name="small_reg">
+    <item name="font">@font/lato_regular</item>
+    <item name="android:textSize">14dp</item>
+    <item name="fontWeight">400</item>
+    <item name="lineHeight">22dp</item>
+    <item name="fontStyle">normal</item>
+</style>
+
+<style name="small_bold">
+    <item name="font">@font/lato_bold</item>
+    <item name="android:textSize">14dp</item>
+    <item name="fontWeight">700</item>
+    <item name="lineHeight">22dp</item>
+    <item name="fontStyle">normal</item>
+</style>
+
+
+<style name="xsmall_reg">
+    <item name="font">@font/lato_regular</item>
+    <item name="android:textSize">12dp</item>
+    <item name="fontWeight">400</item>
+    <item name="lineHeight">18dp</item>
+    <item name="fontStyle">normal</item>
+</style>
+
+<style name="xsmall_bold">
+    <item name="font">@font/lato_bold</item>
+    <item name="android:textSize">12dp</item>
+    <item name="fontWeight">700</item>
+    <item name="lineHeight">18dp</item>
+    <item name="fontStyle">normal</item>
+</style>
+
+
+<style name="xxsmall_bold">
+    <item name="font">@font/lato_bold</item>
+    <item name="android:textSize">10dp</item>
+    <item name="fontWeight">400</item>
+    <item name="lineHeight">18dp</item>
+    <item name="fontStyle">normal</item>
+</style>
+
+<!-- Style typographique OUIDOU FIN -->
+
+
+
+</resources>
