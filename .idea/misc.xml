@@ -7,10 +7,14 @@
         <entry key="app/src/main/res/drawable/contrat_type_selector.xml" value="0.112" />
         <entry key="app/src/main/res/drawable/contrat_type_unselected_background.xml" value="0.112" />
         <entry key="app/src/main/res/drawable/gradient_progress.xml" value="0.1355" />
+        <entry key="app/src/main/res/drawable/ic_crayon_bleu.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/icone_bg.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/rectangle_pointilles.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/rectangle_sans.xml" value="0.1355" />
         <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.112" />
         <entry key="app/src/main/res/drawable/utils_avatar.xml" value="0.1355" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/edit_profil.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_device_steering.xml" value="0.2341485507246377" />
         <entry key="app/src/main/res/layout/fragment_home_page.xml" value="0.2341485507246377" />
         <entry key="app/src/main/res/layout/fragment_my_account.xml" value="0.15729166666666666" />
