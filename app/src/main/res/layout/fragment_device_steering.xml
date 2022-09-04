@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.deviceSteering.DeviceSteeringFragment">
+
+    <LinearLayout
+        android:id="@+id/lightView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+            <TextView
+                android:id="@+id/devicename"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Devices Name"
+                android:fontFamily="@font/lato_black"
+                android:textSize="24sp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/intensiteCircularProgressBar"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:cpb_progress_max="100"
+                app:cpb_progress="0"
+                android:tooltipText="Exemple"
+                app:cpb_background_progressbar_color="@android:color/holo_orange_light"
+                app:cpb_background_progressbar_width="30dp"
+                app:cpb_progress_direction="to_left"
+                app:cpb_start_angle="45"
+                app:cpb_progressbar_color="@android:color/holo_red_dark"
+                app:cpb_progressbar_width="20dp"
+                app:cpb_round_border="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal">
+                <ImageView
+                    android:id="@+id/light"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/light"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/intensiteTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_black"
+                    android:text="0%"
+                    android:textSize="50dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_heavy_italic"
+                    android:text="Intensite"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+
+        <SeekBar
+            android:id="@+id/intensiteProgressSetter"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="24dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="70"
+            android:progressDrawable="@drawable/gradient_progress"
+            android:thumb="@drawable/seek_th"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/acompte_validate_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+
+
+        <CheckBox
+            android:id="@+id/onOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/product_type_selector"
+            android:button="@android:color/transparent"
+            android:paddingStart="16dp"
+            android:paddingTop="9dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="9dp"
+            android:layout_marginTop="20dp"
+            android:text="Allumer"
+            android:textAlignment="center"
+            android:textColor="@color/type_product_selector"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            app:drawableTint="@color/type_product_selector" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/heaterView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:id="@+id/heater_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+            <TextView
+                android:id="@+id/heater_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Heater Name"
+                android:fontFamily="@font/lato_black"
+                android:textSize="24sp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/temperatureCircularProgressBar"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:cpb_progress_max="28"
+                app:cpb_progress="7"
+                android:tooltipText="Exemple"
+                app:cpb_background_progressbar_color="@android:color/holo_orange_light"
+                app:cpb_background_progressbar_width="30dp"
+                app:cpb_progress_direction="to_left"
+                app:cpb_start_angle="45"
+                app:cpb_progressbar_color="@android:color/holo_red_dark"
+                app:cpb_progressbar_width="20dp"
+                app:cpb_round_border="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal">
+                <ImageView
+                    android:id="@+id/heaterImg"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/heater"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/temperatureTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_black"
+                    android:text="0°C"
+                    android:textSize="50dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_heavy_italic"
+                    android:text="Température"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+
+        <SeekBar
+            android:id="@+id/temperatureProgressSetter"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="24dp"
+            android:indeterminate="false"
+            android:max="28"
+            android:min="7"
+            android:progress="14"
+            android:progressDrawable="@drawable/gradient_progress"
+            android:thumb="@drawable/seek_th"
+            android:visibility="visible"
+
+            app:layout_constraintBottom_toTopOf="@+id/acompte_validate_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+
+
+        <CheckBox
+            android:id="@+id/mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/product_type_selector"
+            android:button="@android:color/transparent"
+            android:paddingStart="16dp"
+            android:paddingTop="9dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="9dp"
+            android:layout_marginTop="20dp"
+            android:text="Allumer"
+            android:textAlignment="center"
+            android:textColor="@color/type_product_selector"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            app:drawableTint="@color/type_product_selector" />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rollerShutterView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:id="@+id/roller_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+            <TextView
+                android:id="@+id/rollername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Devices Name"
+                android:fontFamily="@font/lato_black"
+                android:textSize="24sp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/rollerImg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/roller_shutter"
+            android:layout_gravity="center"/>
+
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="24dp"
+            android:indeterminate="false"
+            android:max="28"
+            android:min="7"
+            android:progress="14"
+            android:progressDrawable="@drawable/gradient_progress"
+            android:thumb="@drawable/seek_th"
+            android:visibility="visible"
+
+            app:layout_constraintBottom_toTopOf="@+id/acompte_validate_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+    </LinearLayout>
+
+</FrameLayout>
