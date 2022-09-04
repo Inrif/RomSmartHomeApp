@@ -1,12 +1,10 @@
 package com.a.romsmarthomeapp.db.dao
 
 import androidx.lifecycle.LiveData
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.room.*
 import com.a.romsmarthomeapp.model.Device
 import com.a.romsmarthomeapp.model.DeviceList
+import com.a.romsmarthomeapp.model.User
 import com.a.romsmarthomeapp.utils.Resource
 import retrofit2.Response
 import retrofit2.http.DELETE
@@ -35,6 +33,10 @@ interface DeviceDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(device: Device)
+
+
+    @Update
+    suspend fun  updateDevice(device: Device)
 
 
 

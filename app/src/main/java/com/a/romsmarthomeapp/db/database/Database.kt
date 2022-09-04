@@ -16,7 +16,7 @@ import com.a.romsmarthomeapp.utils.Converters
  */
 
 
-@androidx.room.Database(entities = [Device::class, User::class], version = 2, exportSchema = false)
+@androidx.room.Database(entities = [Device::class, User::class], version = 1, exportSchema = false)
 
 @TypeConverters(Converters::class)
 abstract class Database : RoomDatabase() {

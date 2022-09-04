@@ -2,11 +2,7 @@ package com.a.romsmarthomeapp.api
 
 import com.a.romsmarthomeapp.model.Device
 import com.a.romsmarthomeapp.model.DeviceList
-import com.a.romsmarthomeapp.model.User
-import okhttp3.ResponseBody
-import retrofit2.Call
 import retrofit2.Response
-import retrofit2.http.DELETE
 import retrofit2.http.GET
 import retrofit2.http.Path
 
@@ -20,8 +16,17 @@ interface DeviceApiService {
     @GET("data.json")
     suspend fun getAllDevices() : Response<DeviceList>
 
+//    @GET("data.json")
+//    suspend fun getAllUsers() : Response<UserList>
+
     @GET("device/{id}")
     suspend fun getDevice(@Path("id") id: Int): Response<Device>
+
+
+//    @GET("user/{id}")
+//    suspend fun getAlltypeUser(@Path("id") id: Long): Response<User>
+
+
 
 
 }

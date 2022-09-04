@@ -1,6 +1,5 @@
 package com.a.romsmarthomeapp.repository
 
-import androidx.lifecycle.LiveData
 import com.a.romsmarthomeapp.api.DeviceApiDataSource
 import com.a.romsmarthomeapp.db.dao.DeviceDao
 import com.a.romsmarthomeapp.model.Device
@@ -21,6 +20,17 @@ class DeviceRepository @Inject constructor(
     private val dbDataSource: DeviceDao,
 ) {
 
+//    fun getDevice(id: Int) = performGetOperation(
+//        databaseQuery = { dbDataSource.getDevice(id) },
+//        networkCall = { apiDataSource.getDevice(id) }
+//    ) { dbDataSource.insert(it) }
+//
+//    fun getDevices() = performGetOperation(
+//        databaseQuery = { dbDataSource.getAllDevices()},
+//        networkCall = { apiDataSource.getDevices() }
+//    ) { dbDataSource.insertAll(it.devices) }
+
+
     fun getDevice(id: Int) = performGetOperation(
         databaseQuery = { dbDataSource.getDevice(id) },
         networkCall = { apiDataSource.getDevice(id) },
@@ -32,6 +42,20 @@ class DeviceRepository @Inject constructor(
         networkCall = { apiDataSource.getDevices() },
         saveCallResult = { dbDataSource.insertAll(it.devices) }
     )
+
+    fun updateDevice(id: Int) = performGetOperation(
+        databaseQuery = { dbDataSource.getDevice(id)},
+        networkCall = { apiDataSource.getDevice(id) },
+        saveCallResult = { dbDataSource.updateDevice(it) }
+    )
+//
+//   fun updateDevice(device: Device)
+
+//    fun updateUser() = performGetOperation(
+//        databaseQuery = { dbDataSource.getUser() },
+//        networkCall = { apiDataSource.getDevices() },
+//        saveCallResult = { dbDataSource.updateUser(it.user) }
+//    )
 
     fun deleteDevice(id: Int)  { dbDataSource.deleteDevice(id)}
 

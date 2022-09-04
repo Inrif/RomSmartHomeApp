@@ -1,5 +1,7 @@
 package com.a.romsmarthomeapp.repository
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.a.romsmarthomeapp.api.DeviceApiDataSource
 import com.a.romsmarthomeapp.db.dao.DeviceDao
 import com.a.romsmarthomeapp.db.dao.UserDao
@@ -22,6 +24,12 @@ class UserRepository @Inject constructor(
         saveCallResult = { dbDataSource.insertUser(it.user) }
     )
 
+
+    fun updateUser() = performGetOperation(
+        databaseQuery = { dbDataSource.getUser() },
+        networkCall = { apiDataSource.getDevices() },
+        saveCallResult = { dbDataSource.updateUser(it.user) }
+    )
 
 
 }

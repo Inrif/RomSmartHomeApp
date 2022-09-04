@@ -1,6 +1,5 @@
 package com.a.romsmarthomeapp.api
 
-import com.a.romsmarthomeapp.model.User
 import javax.inject.Inject
 
 /**
@@ -15,5 +14,7 @@ class DeviceApiDataSource @Inject constructor(
 
     suspend fun getDevices() = getResult { deviceApiService.getAllDevices() }
     suspend fun getDevice(id: Int) = getResult { deviceApiService.getDevice(id) }
+//    suspend fun getAlltypeUser(id: Long) = getResult { deviceApiService.getAlltypeUser(id) }
+//    suspend fun getAllUsers() = getResult { deviceApiService.getAllUsers() }
 
 }

@@ -18,10 +18,6 @@
             app:destination="@id/myAccountFragment" />
     </fragment>
 
-    <action
-        android:id="@+id/action_charactersFragment_to_characterDetailFragment"
-        app:destination="@id/deviceSteeringFragment"
-      />
 
     <fragment
         android:id="@+id/deviceSteeringFragment"
@@ -34,7 +30,12 @@
         android:id="@+id/myAccountFragment"
         android:name="com.a.romsmarthomeapp.ui.myAccount.MyAccountFragment"
         android:label="fragment_my_account"
-        tools:layout="@layout/fragment_my_account" />
+        tools:layout="@layout/fragment_my_account" >
+
+        <action
+            android:id="@+id/action_myAccountFragment_to_deviceSteeringFragment"
+            app:destination="@id/deviceSteeringFragment" />
+    </fragment>
 
 
 </navigation>
